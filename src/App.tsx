@@ -4,7 +4,7 @@ import { RouterProvider } from 'react-router-dom'
 import router from './router'
 
 const App = () => {
-  const [isAppInstalled, setAppInstalled] = useState(false)
+  const [isAppInstalled, setAppInstalled] = useState<boolean>(false)
 
   const query = new URLSearchParams(window.location.search)
 
@@ -23,7 +23,7 @@ const App = () => {
         const access_mode = 'per-user'
         const client_id = apiKey
         const scopes =
-          'read_customers,read_orders,write_customers,write_discounts,write_delivery_customizations,read_delivery_customizations'
+          'read_customers,read_orders,write_customers,write_discounts,write_delivery_customizations,read_delivery_customizations,read_content,write_content,read_fulfillments,write_fulfillments'
         const authorizeUrl = `https://${shop}/admin/oauth/authorize?client_id=${client_id}&scope=${scopes}&redirect_uri=${redirect_uri}&state=${nonce}&grant_options[]=${access_mode}`
         window.location.replace(authorizeUrl)
 
