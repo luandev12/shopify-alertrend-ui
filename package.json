@@ -18,14 +18,16 @@
     "@shopify/app-bridge-react": "^3.7.7",
     "@shopify/polaris": "^11.1.2",
     "@vitejs/plugin-react": "^4.0.0",
+    "antd": "^5.9.0",
     "axios": "^1.5.0",
+    "bootstrap": "^5.3.1",
     "dotenv": "^16.3.1",
     "nonce": "^1.0.4",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.12.1",
+    "react-router-dom": "^6.16.0",
     "vite-plugin-react-pages": "^4.1.2"
   },
   "devDependencies": {
