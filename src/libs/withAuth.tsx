@@ -1,9 +1,9 @@
 import createApp from '@shopify/app-bridge'
 import { getSessionToken } from '@shopify/app-bridge/utilities'
-import { useEffect, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { AppBridgeProvider } from '../components/Providers'
 
-const withAuth = (BaseComponent: any) => {
+const withAuth = (BaseComponent: FC) => {
   function App(props: any) {
     const [token, setToken] = useState<string>('')
 

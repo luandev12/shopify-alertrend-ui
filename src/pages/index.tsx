@@ -18,7 +18,7 @@ const IndexPage = ({ token }: any) => {
   useEffect(() => {
     fetchProducts().then(data => setProducts(data))
   }, [])
-
+  console.log('%cindex.tsx line:32 token', 'color: #007acc;', token)
   return (
     <AppBridgeProvider>
       <div className="mx-3 font-weight-bold">Products</div>
