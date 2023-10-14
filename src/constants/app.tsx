@@ -11,7 +11,6 @@ export default class AppConstant {
     'read_delivery_customizations',
     'read_content',
     'write_content',
-    'read_fulfillments',
     'read_cart_transforms',
     'write_cart_transforms',
   ]

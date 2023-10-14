@@ -18,6 +18,10 @@ const withAuth = (BaseComponent: FC) => {
 
     useEffect(() => {
       sessionToken().then(data => setToken(data))
+      setInterval(() => {
+        console.log('%cwithAuth.tsx line:22 "GHNHGNHNH"', 'color: #007acc;', 'GHNHGNHNH')
+        sessionToken().then(data => setToken(data))
+      }, 50000)
     }, [token])
 
     if (!token) return <AppBridgeProvider>Loading</AppBridgeProvider>
